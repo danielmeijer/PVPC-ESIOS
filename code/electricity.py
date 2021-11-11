@@ -91,5 +91,5 @@ while True:
 
     ## Imprimir la info por consola en formato JSON
     print ('{\"Actual\":' + str(valor_act) + ',\"Maximo\":' + str(valor_max) + ',\"Minimo\":' + str(valor_min) + ',\"Media\":' + str(valor_med) + ',\"BajoMedia\":' + str(bajomedia).lower() + ',\"ProximaBM\":\"' + proximahorabm.isoformat() + '\",\"HorasBM\":' + str(itemsbajomedia) + '}')
-    print ('Extract tomorrow again, or restart container to get data NOW.')
-    time.sleep(86400)
+    print ('Fetching again in 30min or restart container to get data NOW.')
+    time.sleep(1800) # Fetch every 30min.
